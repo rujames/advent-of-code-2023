@@ -1,7 +1,7 @@
 Input ← ⊜□¬∊:"\n\r".&fras"input.txt"
-Instructions ← ↯[×100⧻Input]=@R⊔⊢Input
+Instructions ← ↯[×50⧻Input]=@R⊔⊢Input
 Labels ← ∵(↙3⊔)↘1Input
-Forks ← ∵(/⊂∵⊔regex"[A-Z]{3}"↘6⊔)↘1Input
-PartOne ← ⊗"ZZZ"⇌∧(⊂⊡⊙(⊡:Forks⊗:Labels⊢.)) Instructions ["AAA"]
+Forks ← ∵(/⊂∵(⊗:Labels⊔)regex"[A-Z]{3}"↘6⊔)↘1Input
+PartOne ← ⊗⊗"ZZZ"Labels⇌∧(⊂⊡⊙(⊡:Forks⊢.))Instructions[⊗"AAA"Labels]
 
 PartOne
